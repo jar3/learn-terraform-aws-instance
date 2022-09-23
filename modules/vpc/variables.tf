@@ -9,15 +9,15 @@ variable "vpc_cidr" {
     default = "10.200.0.0/16"
 }
 
-variable "public_subnet_nombers" {
-    type = map(number)
-    description= "Map of AZ to a anumber that should be used for public subnets"
-    default= { 
-        "us-east-2a" = 1
-        "us-east-2b" = 2
-        "us-east-2c" = 3
-    }
-}
+# variable "public_subnet_numbers" {
+#     type = map(number)
+#     description= "Map of AZ to a anumber that should be used for public subnets"
+#     default= { 
+#         "us-east-2a" = 1
+#         "us-east-2b" = 2
+#         "us-east-2c" = 3
+#     }
+# }
 
 variable "private_subnet_numbers" {
     type = map(number)
